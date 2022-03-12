@@ -395,12 +395,13 @@ body {
 //===============================================
 //===============================================
 // Начало: Блока-Достижения;
-.achievement {
+
+/* .achievement {
     background-image: url('/img/main/bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 .achievement__body {}
 
@@ -421,21 +422,12 @@ body {
 .achievement__title {
     font-family: Single;
     text-transform: uppercase;
-    @include adaptiv-value('font-size',
-    48,
-    18,
-    1);
+    @include adaptiv-value('font-size', 48, 18, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    68,
-    25,
-    1);
+    @include adaptiv-value('line-height', 68, 25, 1);
     letter-spacing: 0.01em;
     color: #fff;
-    @include adaptiv-value('padding-bottom',
-    230,
-    160,
-    1);
+    @include adaptiv-value('padding-bottom', 230, 160, 1);
     @media (max-width: 992px) {
         padding-top: 70px;
     }
@@ -467,34 +459,19 @@ body {
 
 .blok-ul__title {
     font-family: Roboto;
-    @include adaptiv-value('font-size',
-    40,
-    26,
-    1);
+    @include adaptiv-value('font-size', 40, 26, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    47,
-    30,
-    1);
+    @include adaptiv-value('line-height', 47, 30, 1);
     color: #fff;
 }
 
 .blok-ul__subtitle {
     font-family: Roboto;
-    @include adaptiv-value('font-size',
-    18,
-    14,
-    1);
+    @include adaptiv-value('font-size', 18, 14, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    21,
-    16,
-    1);
+    @include adaptiv-value('line-height', 21, 16, 1);
     color: #fff;
-    @include adaptiv-value('padding-bottom',
-    65,
-    40,
-    1);
+    @include adaptiv-value('padding-bottom', 65, 40, 1);
 }
 
 .blok-ul__img {
@@ -578,36 +555,21 @@ body {
 
 .about-body__title {
     font-family: Single;
-    @include adaptiv-value('font-size',
-    48,
-    24,
-    1);
+    @include adaptiv-value('font-size', 48, 24, 1);
     font-weight: 400;
     line-height: 60px;
     color: #1e2a5e;
-    @include adaptiv-value('padding-bottom',
-    80,
-    38,
-    1);
+    @include adaptiv-value('padding-bottom', 80, 38, 1);
     text-transform: uppercase;
 }
 
 .about-body__text {
     font-family: Roboto;
-    @include adaptiv-value('font-size',
-    18,
-    14,
-    1);
+    @include adaptiv-value('font-size', 18, 14, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    27,
-    21,
-    1);
+    @include adaptiv-value('line-height', 27, 21, 1);
     color: #263475;
-    @include adaptiv-value('padding-bottom',
-    40,
-    20,
-    1);
+    @include adaptiv-value('padding-bottom', 40, 20, 1);
     & a {
         color: #263475;
         font-weight: 700;
@@ -641,14 +603,8 @@ body {
 //===============================================
 // Начало: Блока-Мисии;
 .missions {
-    @include adaptiv-value('padding-top',
-    205,
-    50,
-    1);
-    @include adaptiv-value('padding-bottom',
-    205,
-    50,
-    1);
+    @include adaptiv-value('padding-top', 205, 50, 1);
+    @include adaptiv-value('padding-bottom', 205, 50, 1);
 }
 
 .missions__body {}
@@ -656,23 +612,14 @@ body {
 .missions__title {
     font-family: Single;
     text-transform: uppercase;
-    @include adaptiv-value('font-size',
-    48,
-    24,
-    1);
+    @include adaptiv-value('font-size', 48, 24, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    60,
-    30,
-    1);
+    @include adaptiv-value('line-height', 60, 30, 1);
     color: #1e2a5e;
     text-align: center;
     max-width: 845px;
     margin: 0 auto;
-    @include adaptiv-value('padding-bottom',
-    40,
-    25,
-    1);
+    @include adaptiv-value('padding-bottom', 40, 25, 1);
 }
 
 .missions__text {
@@ -681,25 +628,13 @@ body {
     & p {
         font-family: Single;
         text-align: center;
-        @include adaptiv-value('font-size',
-        18,
-        14,
-        1);
+        @include adaptiv-value('font-size', 18, 14, 1);
         font-weight: 400;
-        @include adaptiv-value('line-height',
-        22,
-        18,
-        1);
+        @include adaptiv-value('line-height', 22, 18, 1);
         color: #1e2a5e;
-        @include adaptiv-value('margin-bottom',
-        15,
-        10,
-        1);
+        @include adaptiv-value('margin-bottom', 15, 10, 1);
     }
-    @include adaptiv-value('margin-bottom',
-    30,
-    15,
-    1);
+    @include adaptiv-value('margin-bottom', 30, 15, 1);
 }
 
 .missions__img {
@@ -715,10 +650,7 @@ body {
 .plans {
     background: #e1eaec;
     position: relative;
-    @include adaptiv-value('padding-bottom',
-    100,
-    25,
-    1);
+    @include adaptiv-value('padding-bottom', 100, 25, 1);
 }
 
 .plans__img {
@@ -745,22 +677,13 @@ body {
 
 .body-plans__title {
     font-family: Single;
-    @include adaptiv-value('font-size',
-    48,
-    24,
-    1);
+    @include adaptiv-value('font-size', 48, 24, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    60,
-    30,
-    1);
+    @include adaptiv-value('line-height', 60, 30, 1);
     text-transform: uppercase;
     color: #fff;
     max-width: 840px;
-    @include adaptiv-value('padding-bottom',
-    80,
-    30,
-    1);
+    @include adaptiv-value('padding-bottom', 80, 30, 1);
 }
 
 .body-plans__ul {}
@@ -794,15 +717,9 @@ body {
     display: flex;
     align-items: center;
     font-family: Roboto;
-    @include adaptiv-value('font-size',
-    18,
-    14,
-    1);
+    @include adaptiv-value('font-size', 18, 14, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    27,
-    21,
-    1);
+    @include adaptiv-value('line-height', 27, 21, 1);
     color: #1e2a5e;
     margin-bottom: 35px;
     &:before {
@@ -817,15 +734,9 @@ body {
 
 .ul-plans__text {
     font-family: Roboto;
-    @include adaptiv-value('font-size',
-    18,
-    14,
-    1);
+    @include adaptiv-value('font-size', 18, 14, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    27,
-    21,
-    1);
+    @include adaptiv-value('line-height', 27, 21, 1);
     color: #1e2a5e;
 }
 
@@ -835,28 +746,16 @@ body {
 // Начало: Блока-Задачи;
 .tasks {
     background: #e1eaec;
-    @include adaptiv-value('padding-top',
-    100,
-    25,
-    1);
-    @include adaptiv-value('padding-bottom',
-    150,
-    35,
-    1);
+    @include adaptiv-value('padding-top', 100, 25, 1);
+    @include adaptiv-value('padding-bottom', 150, 35, 1);
 }
 
 .tasks__title {
     text-transform: uppercase;
     font-family: Single;
-    @include adaptiv-value('font-size',
-    48,
-    24,
-    1);
+    @include adaptiv-value('font-size', 48, 24, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    60,
-    30,
-    1);
+    @include adaptiv-value('line-height', 60, 30, 1);
     color: #1e2a5e;
     margin-bottom: 20px;
 }
@@ -880,10 +779,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    @include adaptiv-value('margin-bottom',
-    55,
-    20,
-    1);
+    @include adaptiv-value('margin-bottom', 55, 20, 1);
     &:last-child {
         margin-bottom: 15px;
     }
@@ -896,15 +792,9 @@ body {
 
 .left-tasks__text {
     font-family: Roboto;
-    @include adaptiv-value('font-size',
-    18,
-    14,
-    1);
+    @include adaptiv-value('font-size', 18, 14, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    27,
-    21,
-    1);
+    @include adaptiv-value('line-height', 27, 21, 1);
     color: #1e2a5e;
     flex: 0 0 90%;
 }
@@ -925,33 +815,18 @@ body {
 //===============================================
 // Начало: Блока-Руководство;
 .slaider {
-    @include adaptiv-value('padding-top',
-    200,
-    40,
-    1);
-    @include adaptiv-value('padding-bottom',
-    100,
-    20,
-    1);
+    @include adaptiv-value('padding-top', 200, 40, 1);
+    @include adaptiv-value('padding-bottom', 100, 20, 1);
 }
 
 .slaider__title {
     text-transform: uppercase;
     font-family: Single;
-    @include adaptiv-value('font-size',
-    48,
-    24,
-    1);
+    @include adaptiv-value('font-size', 48, 24, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    60,
-    30,
-    1);
+    @include adaptiv-value('line-height', 60, 30, 1);
     color: #1e2a5e;
-    @include adaptiv-value('margin-bottom',
-    65,
-    30,
-    1);
+    @include adaptiv-value('margin-bottom', 65, 30, 1);
 }
 
 .slaider__body {
@@ -1046,24 +921,15 @@ body {
 }
 
 .reght-buttons__button {
-    @include adaptiv-value('width',
-    70,
-    40,
-    1);
-    @include adaptiv-value('height',
-    70,
-    40,
-    1);
+    @include adaptiv-value('width', 70, 40, 1);
+    @include adaptiv-value('height', 70, 40, 1);
     border: 1px solid #e4e4e4;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    @include adaptiv-value('font-size',
-    18,
-    12,
-    1);
+    @include adaptiv-value('font-size', 18, 12, 1);
     color: #1e2a5e;
 }
 
@@ -1076,14 +942,8 @@ body {
 //===============================================
 // Начало: Блока-Новости;
 .news {
-    @include adaptiv-value('padding-top',
-    100,
-    20,
-    1);
-    @include adaptiv-value('padding-bottom',
-    100,
-    40,
-    1);
+    @include adaptiv-value('padding-top', 100, 20, 1);
+    @include adaptiv-value('padding-bottom', 100, 40, 1);
 }
 
 ._container {}
@@ -1091,20 +951,11 @@ body {
 .news__title {
     text-transform: uppercase;
     font-family: Single;
-    @include adaptiv-value('font-size',
-    48,
-    24,
-    1);
+    @include adaptiv-value('font-size', 48, 24, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    60,
-    30,
-    1);
+    @include adaptiv-value('line-height', 60, 30, 1);
     color: #1e2a5e;
-    @include adaptiv-value('margin-bottom',
-    65,
-    30,
-    1);
+    @include adaptiv-value('margin-bottom', 65, 30, 1);
 }
 
 .news__body {
@@ -1139,28 +990,13 @@ body {
 
 .left-news__data {
     font-family: Roboto;
-    @include adaptiv-value('font-size',
-    14,
-    12,
-    1);
+    @include adaptiv-value('font-size', 14, 12, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    21,
-    18,
-    1);
-    @include adaptiv-value('margin-left',
-    45,
-    15,
-    1);
+    @include adaptiv-value('line-height', 21, 18, 1);
+    @include adaptiv-value('margin-left', 45, 15, 1);
     color: #fff;
-    @include adaptiv-value('margin-top',
-    55,
-    30,
-    1);
-    @include adaptiv-value('margin-bottom',
-    40,
-    20,
-    1);
+    @include adaptiv-value('margin-top', 55, 30, 1);
+    @include adaptiv-value('margin-bottom', 40, 20, 1);
 }
 
 .far {}
@@ -1168,43 +1004,25 @@ body {
 .fa-clock {}
 
 .left-news__title {
-    @include adaptiv-value('margin-left',
-    45,
-    15,
-    1);
+    @include adaptiv-value('margin-left', 45, 15, 1);
     font-family: Roboto;
-    @include adaptiv-value('font-size',
-    28,
-    24,
-    1);
+    @include adaptiv-value('font-size', 28, 24, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    35,
-    29,
-    1);
-    @include adaptiv-value('margin-bottom',
-    30,
-    20,
-    1);
+    @include adaptiv-value('line-height', 35, 29, 1);
+    @include adaptiv-value('margin-bottom', 30, 20, 1);
     color: #fff;
     max-width: 440px;
 }
 
 .left-news__text {
-    @include adaptiv-value('margin-left',
-    45,
-    15,
-    1);
+    @include adaptiv-value('margin-left', 45, 15, 1);
     max-width: 440px;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: #fff;
-    @include adaptiv-value('margin-bottom',
-    55,
-    10,
-    1);
+    @include adaptiv-value('margin-bottom', 55, 10, 1);
     @media (max-width: 992px) {
         display: none;
     }
@@ -1215,10 +1033,7 @@ body {
 .left-news__link-f a {
     color: #fff !important;
     border-bottom: 1px solid #fff;
-    @include adaptiv-value('margin-left',
-    45,
-    15,
-    1);
+    @include adaptiv-value('margin-left', 45, 15, 1);
 }
 
 .fa-arrow-up {}
@@ -1261,33 +1076,18 @@ body {
 
 .blok-reght__data {
     font-family: Roboto;
-    @include adaptiv-value('font-size',
-    14,
-    12,
-    1);
+    @include adaptiv-value('font-size', 14, 12, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    21,
-    18,
-    1);
+    @include adaptiv-value('line-height', 21, 18, 1);
     color: #263475;
-    @include adaptiv-value('margin-bottom',
-    20,
-    10,
-    1);
+    @include adaptiv-value('margin-bottom', 20, 10, 1);
 }
 
 .blok-reght__text {
     font-family: Roboto;
-    @include adaptiv-value('font-size',
-    18,
-    14,
-    1);
+    @include adaptiv-value('font-size', 18, 14, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    22,
-    17,
-    1);
+    @include adaptiv-value('line-height', 22, 17, 1);
     color: #263475;
 }
 
@@ -1305,30 +1105,18 @@ body {
 //===============================================
 // Начало: Блока-Карта;
 .map {
-    @include adaptiv-value('padding-top',
-    100,
-    40,
-    1);
+    @include adaptiv-value('padding-top', 100, 40, 1);
 }
 
 ._container {}
 
 .map__title {
     font-family: Single;
-    @include adaptiv-value('font-size',
-    48,
-    24,
-    1);
+    @include adaptiv-value('font-size', 48, 24, 1);
     font-weight: 400;
-    @include adaptiv-value('line-height',
-    60,
-    30,
-    1);
+    @include adaptiv-value('line-height', 60, 30, 1);
     color: #1e2a5e;
-    @include adaptiv-value('margin-bottom',
-    65,
-    30,
-    1);
+    @include adaptiv-value('margin-bottom', 65, 30, 1);
     text-transform: uppercase;
 }
 

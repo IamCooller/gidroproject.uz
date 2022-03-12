@@ -475,13 +475,12 @@ body._lock {
   transition: all 0.3s ease 0s;
 }
 
-.achievement {
-  background-image: url("/img/main/bg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
+/* .achievement {
+    background-image: url('/img/main/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
 .achievement__sound {
   width: 100%;
   text-align: right;
