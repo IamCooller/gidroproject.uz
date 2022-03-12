@@ -26,7 +26,7 @@
 
     <link rel="stylesheet" href="libs/bvi/css/bvi.css" />
     <!-- main css -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="scss/main.css" />
 
     <!-- jQeury -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -37,11 +37,20 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!-- main js -->
-    <script defer src="../js/voice.js"></script>
+    <script defer src="js/voice.js"></script>
     <script defer src="js/custom.js"></script>
 </head>
 
 <body>
+    <div id="myOverlay" class="overlay" onclick="closeSearch()">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search" onclick="event.stopPropagation()">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
     <div class="popup popup-uz mfp-hide">
         <p class="popup__title">Реализованные и действующие проекты АО “Гидропроект”</p>
 
@@ -2118,7 +2127,7 @@
                                     <button class="top-header__colour-button" id="fontsSite-normal">A</button>
                                     <button class="top-header__colour-button" id="fontsSite-plus">A+</button>
                                     <button class="top-header__colour-button" id="siteVoice">
-											<img src="../img/main/volume.svg" alt="Иконка" />
+											<img src="img/main/volume.svg" alt="Иконка" />
 										</button>
                                 </div>
                             </div>
@@ -2157,7 +2166,7 @@
                     </nav>
 
                     <div class="bottom-header__right right-header _ps">
-                        <span class="right-header__Search">
+                        <span class="right-header__Search" onclick="openSearch()">
 								<i class="fas fa-search"></i>
 							</span>
 
@@ -2196,7 +2205,7 @@
 
         <div class="hamburger-menu">
             <div class="hamburger-menu__top">
-                <button class="hamburger-menu__search">
+                <button class="hamburger-menu__search" onclick="openSearch()">
 						<img src="img/main/search.svg" alt="Иконка" />
 					</button>
 
@@ -2237,7 +2246,7 @@
                                 <button class="top-header__colour-button" id="fontsSite-normal">A</button>
                                 <button class="top-header__colour-button" id="fontsSite-plus">A+</button>
                                 <button class="top-header__colour-button" id="siteVoice">
-                                        <img src="../img/main/volume.svg" alt="Иконка" />
+                                        <img src="img/main/volume.svg" alt="Иконка" />
                                     </button>
                             </div>
                         </div>
