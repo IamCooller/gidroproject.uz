@@ -476,7 +476,7 @@ body._lock {
 }
 
 .achievement {
-  background-image: url("../img/main/bg.jpg");
+  background-image: url("/img/main/bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1773,6 +1773,67 @@ body.scroll_disabled {
   overflow-y: hidden;
 }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  background-color: #000000e6;
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
 .callback {
   background: #ffff;
   max-width: 626px;
@@ -2130,7 +2191,7 @@ body.scroll_disabled {
   content: '';
   width: 15px;
   height: 15px;
-  background-image: url("../img/main/close.svg");
+  background-image: url("/img/main/close.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -2231,7 +2292,7 @@ body.scroll_disabled {
 .popup__list-item-image {
   width: 64px;
   height: 64px;
-  background-image: url("../img/projects/1.jpg");
+  background-image: url("/img/projects/1.jpg");
   background-size: cover;
   background-position: center;
   margin-right: 12px;

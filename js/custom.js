@@ -423,6 +423,25 @@ $('.top-header__colour-heading').on('click', function() {
     $('.top-header__colour-dropdown').slideToggle()
 })
 
+
+
+$(document).mouseup(function(e) {
+    let container = $(".top-header__colour-dropdown");
+    if (container.has(e.target).length === 0) {
+        container.slideUp();
+    }
+});
+
+
+$(document).mouseup(function(e) {
+    let container = $(".labgvidg-header__dropdown");
+    if (container.has(e.target).length === 0) {
+        container.slideUp();
+    }
+});
+
+
+
 $('body').on('click', '.link_move', function(event) {
     event.preventDefault()
     var id = $(this).attr('href'),
@@ -714,3 +733,14 @@ $(function() {
 $(window).resize(function() {
     $(".file_upload input").triggerHandler("change");
 });
+
+
+function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+
+}
+
+function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+
+}

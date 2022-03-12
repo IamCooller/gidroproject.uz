@@ -1,5 +1,5 @@
-@import fonts
-@import main
+@import _fonts
+@import _main
 
 $accent: #0580C4
 $light: #E1EAEC
@@ -16,9 +16,60 @@ body
 	font-family: Roboto
 	&.scroll_disabled
 		overflow-y: hidden
+
+
 /////Popap////
 
 
+	
+.overlay
+	height: 100%
+	width: 100%
+	display: none
+	position: fixed
+	z-index: 12
+	top: 0
+	left: 0
+	background-color: #000000e6
+	&-content 
+		position: relative
+		top: 46%
+		width: 80%
+		text-align: center
+		margin-top: 30px
+		margin: auto
+	& .closebtn
+		position: absolute
+		top: 20px
+		right: 45px
+		font-size: 60px
+		cursor: pointer
+		color: white
+		&:hover
+			color: #ccc
+
+	& input[type=text] 
+		padding: 15px
+		font-size: 17px
+		border: none
+		float: left
+		width: 80%
+		background: white
+		&:hover
+			background: #f1f1f1
+
+	& button
+		float: left
+		width: 20%
+		padding: 15px
+		background: #ddd
+		font-size: 17px
+		border: none
+		height: 50px
+		cursor: pointer
+		&:hover
+			background: #bbb
+	
 
 .callback
 	background: #ffff
@@ -249,7 +300,7 @@ body
 			content: ''
 			width: 15px
 			height: 15px
-			background-image: url('../img/main/close.svg')
+			background-image: url('/img/main/close.svg')
 			background-repeat: no-repeat
 			background-size: contain
 			background-position: center
@@ -305,7 +356,7 @@ body
 			&-image
 				width: 64px
 				height: 64px
-				background-image: url('../img/projects/1.jpg')
+				background-image: url('/img/projects/1.jpg')
 				background-size: cover
 				background-position: center
 				margin-right: 12px
@@ -1023,7 +1074,7 @@ body
 			text-transform: uppercase
 			height: 36px
 			color: $black
-			font-family: Single;
+			font-family: Single
 			svg
 				@include adaptiv-value('margin-right', 26, 10, 1)
 	&__body
@@ -1724,7 +1775,7 @@ body
 						display: block
 						transition: .2s ease-in
 					&.open::after
-					    transform: translateY(50%) rotate(180deg)
+						transform: translateY(50%) rotate(180deg)
 				&__list 
 					display: none
 					position: absolute
@@ -2061,7 +2112,7 @@ body
 						fill: $black
 					path
 						fill: #fff
-      
+
 .marginTopZero
 	margin-top: 0 !important
 
@@ -3244,7 +3295,7 @@ body
 			overflow-y: hidden
 			-ms-overflow-style: none
 			scrollbar-width: none
-    		
+			
 			&::-webkit-scrollbar 
 				width: 0
 		&__body
@@ -3566,7 +3617,7 @@ body
 				.swiper-slide
 					max-height: 250px
 	.Single__ref_quote
-    	padding: 43px 35px
+		padding: 43px 35px
 	.PressCenterMore
 		.swiper-pagination-more
 			position: relative
