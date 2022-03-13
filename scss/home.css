@@ -3710,6 +3710,10 @@ body.scroll_disabled {
   }
 }
 
+.popup__container-map .popup__map img {
+  width: 702px;
+}
+
 .popup-uz .popup__map-info {
   top: 100px;
   right: 154px;
